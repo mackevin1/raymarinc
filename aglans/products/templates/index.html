@@ -1,6 +1,711 @@
-<html>
-<head></head>
-<body>
-hello world!
-</body>
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>BOSTON | Single page HTML5 Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}">
+        <!-- Place favicon.ico in the root directory -->
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,100,100italic,300italic,400italic,500,500italic,700italic,900' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.theme.css' %}">
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <script src="{% static 'js/vendor/modernizr-2.8.3.min.js' %}"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Navbar content here -->
+        <nav id="navbar" class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="img/Logo.png" alt=""></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#homescreen" class="smoothScroll"><i class="navbar-icon ion-home"></i>home<span class="sr-only">(current)</span></a></li>
+                        <li><a href="#about-us" class="smoothScroll"><i class="navbar-icon ion-android-bookmark"></i>about</a></li>
+                        <li><a href="#latest-work" class="smoothScroll"><i class="navbar-icon ion-android-image"></i>porfolio</a></li>
+                        <li><a href="#services" class="smoothScroll"><i class="navbar-icon ion-android-bus"></i>services</a></li>
+                        <li><a href="#blog" class="smoothScroll"><i class="navbar-icon ion-ios-compose-outline"></i>blog</a></li>
+                        <li><a href="#testimonial" class="smoothScroll"><i class="navbar-icon ion-android-hangout"></i>testimonial</a></li>
+                        <li><a href="#contact" class="smoothScroll"><i class="navbar-icon ion-android-contacts"></i>contact</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <!-- Navbar content end -->
+
+        <!-- Homescreen content here -->
+        <section id="homescreen">
+            <div class="video-container">
+                <video volume="0" poster="video/PC-Typing.jpg" autoplay="autoplay"  preload  loop>
+                    <source src="video/PC-Typing.mp4" type="video/mp4">
+                    <source src="video/PC-Typing.webm" type="video/webm">
+                    <source src="video/PC-Typing.ogv" type="video/ogg">
+                </video>
+            </div>
+            <div class="hero-content-wraper">
+                <div class="container">
+                    <div class="hero-content-inner">
+                        <h2>slim & stylish</h2>
+                        <h3>solution for a big problem.</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Homescreen content end -->
+
+
+        <!-- About-us section end -->
+        <section id="about-us" class="section bg-white">
+            <div class="container">
+                <div class="row section-heading">
+                    <div class="col-md-12 heading-wraper">
+                        <h2>
+                            <span class="title">About us</span>
+                            <span class="separetor">|||</span>
+                            <span class="subtitle">Make sure you know about us</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail about-us-thumbnail">
+                            <img src="img/about-1.jpg" alt="...">
+                            <div class="caption text-center">
+                                <h3>Great Support</h3>
+                                <p>We created awsome 170+ pre-made layouts.Choose one of them and use for own business site.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail about-us-thumbnail">
+                            <img src="img/about-2.jpg" alt="...">
+                            <div class="caption text-center">
+                                <h3>Discussion & Solution</h3>
+                                <p>We created awsome 170+ pre-made layouts.Choose one of them and use for own business site.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail about-us-thumbnail">
+                            <img src="img/about-3.jpg" alt="...">
+                            <div class="caption text-center">
+                                <h3>Product Handover</h3>
+                                <p>We created awsome 170+ pre-made layouts.Choose one of them and use for own business site.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About-us section end -->
+
+        <!-- Counter section  -->
+        <section id="counter" class="section" style="background:url(img/counter-bg.jpg)">
+            <div class="counter-overlay"></div>
+            <div class="container counter-content-container">
+                <h3 class="counter-heading">Why will you love our theme?</h3>
+                <div class="row">
+                    <div class="col-md-3 text-center col-sm-6 col-xs-6">
+                        <div class="counter-inner">
+                            <h1><span class="counter">173</span></h1>
+                            <p>Homepage</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center col-sm-6 col-xs-6">
+                        <div class="counter-inner">
+                            <h1><span class="counter">200</span>+</h1>
+                            <p>Shortcodes & items</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center col-sm-6 col-xs-6">
+                        <div class="counter-inner">
+                            <h1><span class="counter">9518</span></h1>
+                            <p>happy client</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center col-sm-6 col-xs-6">
+                        <div class="counter-inner">
+                            <h1><span class="counter">21</span></h1>
+                            <p>different pages</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Counter section  end-->
+
+        <!-- LatestWork section -->
+        <section id="latest-work" class="section bg-white">
+            <div class="container">
+                <div class="row section-heading">
+                    <div class="col-md-12 heading-wraper">
+                        <h2>
+                            <span class="title">Our latest works</span>
+                            <span class="separetor">|||</span>
+                            <span class="subtitle">Make sure you know about us</span>
+                            <a href="" class="btn btn-default btn-view-more pull-right">view all</a>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-portfolio-wiget">
+                        <div class="portfolio-wiget">
+                            <img class="img-responsive" src="img/portfolio-1.jpg" alt="">
+                            <div class="hover-caption">
+                                <p><i class="portfolio-caption-icon ion-thumbsup"></i>30 Appreciate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-portfolio-wiget">
+                        <div class="portfolio-wiget">
+                            <img class="img-responsive" src="img/portfolio-2.jpg" alt="">
+                            <div class="hover-caption">
+                                <p><i class="portfolio-caption-icon ion-thumbsup"></i>30 Appreciate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-portfolio-wiget">
+                        <div class="portfolio-wiget">
+                            <img class="img-responsive" src="img/portfolio-3.jpg" alt="">
+                            <div class="hover-caption">
+                                <p><i class="portfolio-caption-icon ion-thumbsup"></i>30 Appreciate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-portfolio-wiget">
+                        <div class="portfolio-wiget">
+                            <img class="img-responsive" src="img/portfolio-4.jpg" alt="">
+                            <div class="hover-caption">
+                                <p><i class="portfolio-caption-icon ion-thumbsup"></i>30 Appreciate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-portfolio-wiget">
+                        <div class="portfolio-wiget">
+                            <img class="img-responsive" src="img/portfolio-5.jpg" alt="">
+                            <div class="hover-caption">
+                                <p><i class="portfolio-caption-icon ion-thumbsup"></i>30 Appreciate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-portfolio-wiget">
+                        <div class="portfolio-wiget">
+                            <img class="img-responsive" src="img/portfolio-6.jpg" alt="">
+                            <div class="hover-caption">
+                                <p><i class="portfolio-caption-icon ion-thumbsup"></i>30 Appreciate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- LatestWork section  end-->
+
+        <!-- Services section -->
+        <section id="services" class="section">
+            <div class="container">
+                <div class="row section-heading">
+                    <div class="col-md-12 heading-wraper">
+                        <h2>
+                            <span class="title">our services</span>
+                            <span class="separetor">|||</span>
+                            <span class="subtitle">A little about what we do</span>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 our-services-wiget">
+                        <div class="rounded-icon-box">
+							<div class="rounded-icon-box-inner">
+								<i class="ion-android-plane"></i>
+							</div>
+						</div>
+                       <div class="services-caption">
+                           <h3>Great Transport</h3>
+                           <p>We created awsome 170+ pre-made layouts.Choose one of them and use for own business site.</p>
+                       </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 our-services-wiget">
+                        <div class="rounded-icon-box">
+							<div class="rounded-icon-box-inner">
+								<i class="ion-ios-paperplane"></i>
+							</div>
+						</div>
+                       <div class="services-caption">
+                           <h3>Great Transport</h3>
+                           <p>We created awsome 170+ pre-made layouts.Choose one of them and use for own business site.</p>
+                       </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 our-services-wiget">
+                        <div class="rounded-icon-box">
+							<div class="rounded-icon-box-inner">
+								<i class="ion-ribbon-b"></i>
+							</div>
+						</div>
+                       <div class="services-caption">
+                           <h3>Great Transport</h3>
+                           <p>We created awsome 170+ pre-made layouts.Choose one of them and use for own business site.</p>
+                       </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 our-services-wiget">
+                        <div class="rounded-icon-box">
+							<div class="rounded-icon-box-inner">
+								<i class="ion-help-buoy"></i>
+							</div>
+						</div>
+                       <div class="services-caption">
+                           <h3>Great Transport</h3>
+                           <p>We created awsome 170+ pre-made layouts.Choose one of them and use for own business site.</p>
+                       </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 our-services-wiget">
+                        <div class="rounded-icon-box">
+							<div class="rounded-icon-box-inner">
+								<i class="ion-ios-people"></i>
+							</div>
+						</div>
+                       <div class="services-caption">
+                           <h3>Great Transport</h3>
+                           <p>We created awsome 170+ pre-made layouts.Choose one of them and use for own business site.</p>
+                       </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 our-services-wiget">
+                        <div class="rounded-icon-box">
+							<div class="rounded-icon-box-inner">
+								<i class="ion-happy"></i>
+							</div>
+						</div>
+                       <div class="services-caption">
+                           <h3>Great Transport</h3>
+                           <p>We created awsome 170+ pre-made layouts.Choose one of them and use for own business site.</p>
+                       </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Services section end-->
+
+        <!-- Video section-->
+        <section id="video" class="section">
+            <div class="container video-section-container">
+                <div class="row clearfix video-section-wraper">
+                    <div class="col-md-5 video-heading">
+                        <h3>Watch our Video instruction</h3>
+                    </div>
+                    <div class="col-md-2 video-button">
+                        <div class="rounded-video-button">
+                            <div class="rounded-icon-box-inner-video-button">
+                                <a class="show-video" title="Test title" href="https://www.youtube.com/watch?v=W7T_W7Ao4u4"><i class="ion-ios-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 video-list-item-wraper">
+                        <ul class="video-ul">
+                            <li><i class="icon-on-list ion-checkmark"></i>Follow our video instruction</li>
+                            <li><i class="icon-on-list ion-checkmark"></i>Read our text Documentation</li>
+                            <li><i class="icon-on-list ion-checkmark"></i>Install our theme</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Video section end-->
+        <!-- Feature section -->
+        <section id="feature" class="section bg-white">
+            <div class="container feature-container">
+                <div class="row section-heading">
+                    <div class="col-md-12 heading-wraper">
+                        <h2>
+                            <span class="title">Our Products Features</span>
+                            <span class="separetor">|||</span>
+                            <span class="subtitle">A little about what we do</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row feature-list-wraper">
+                    <div class="col-md-3 list-col">
+                        <ul class="list-group" role="tablist">
+                            <li class="list-group-item active" data-slide="webdesign" role="presentation">Website Design</li>
+                            <li class="list-group-item" data-slide="branding" role="presentation">Branding</li>
+                            <li class="list-group-item" data-slide="retina-ready" role="presentation">Retina Ready</li>
+                            <li class="list-group-item" data-slide="customer-support" role="presentation">Customer Support</li>
+                            <li class="list-group-item" data-slide="user-interface" role="presentation">User Interface</li>
+                            <li class="list-group-item" data-slide="web-development" role="presentation">Web Development</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-9 content-col">
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" data-slide="webdesign">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="img/feature-1.png" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body  media-middle feature-list-media-body">
+                                       <h3>Website Design</h3>
+                                        Quasi architecto beatae vitae dicta sunt explica aborem ipsum dolor sit amet gravida sagittis lacus. Morbi sit amet maur an mi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed a diam nonummy nibh euismod tincidunt ut laoreet dolore magna is aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" data-slide="branding" class="tab-pane">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="img/feature-2.png" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body  media-middle feature-list-media-body">
+                                       <h3>Branding</h3>
+                                        Quasi architecto beatae vitae dicta sunt explica aborem ipsum dolor sit amet gravida sagittis lacus. Morbi sit amet maur an mi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed a diam nonummy nibh euismod tincidunt ut laoreet dolore magna is aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" data-slide="retina-ready">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="img/feature-3.png" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body  media-middle feature-list-media-body">
+                                       <h3>Retina Ready</h3>
+                                        Quasi architecto beatae vitae dicta sunt explica aborem ipsum dolor sit amet gravida sagittis lacus. Morbi sit amet maur an mi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed a diam nonummy nibh euismod tincidunt ut laoreet dolore magna is aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" data-slide="customer-support">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="img/feature-4.png" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body  media-middle feature-list-media-body">
+                                       <h3>Customer Support</h3>
+                                        Quasi architecto beatae vitae dicta sunt explica aborem ipsum dolor sit amet gravida sagittis lacus. Morbi sit amet maur an mi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed a diam nonummy nibh euismod tincidunt ut laoreet dolore magna is aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" data-slide="user-interface">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="img/feature-5.png" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body  media-middle feature-list-media-body">
+                                       <h3>User Interface</h3>
+                                        Quasi architecto beatae vitae dicta sunt explica aborem ipsum dolor sit amet gravida sagittis lacus. Morbi sit amet maur an mi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed a diam nonummy nibh euismod tincidunt ut laoreet dolore magna is aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" data-slide="web-development">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="img/feature-1.png" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body  media-middle feature-list-media-body">
+                                       <h3>Web Development</h3>
+                                        Quasi architecto beatae vitae dicta sunt explica aborem ipsum dolor sit amet gravida sagittis lacus. Morbi sit amet maur an mi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed a diam nonummy nibh euismod tincidunt ut laoreet dolore magna is aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Feature section end-->
+
+        <!-- Testimonial section-->
+        <section id="testimonial" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="owl-carousel">
+                            <div class="text-center">
+                                <div class="testimonial-img-wraper text-center">
+                                    <img class="img-responsive img-circle" src="img/meet_1.png" alt="">
+                                    <p class="author">David Martin</p>
+                                </div>
+                                <div class="testimonial-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egetvel lacus pretium rhoncus a quis nisly Ut vehicula gravida dui in pulvinar donec diam elit consequat eget augue vitae aliquet sollicitudin.
+                                </div>
+
+                            </div>
+                            <div class="text-center">
+                                <div class="testimonial-img-wraper text-center">
+                                    <img class="img-responsive img-circle" src="img/meet_2.png" alt="">
+                                    <p class="author">Casey Williams</p>
+                                </div>
+                                <div class="testimonial-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egetvel lacus pretium rhoncus a quis nisly Ut vehicula gravida dui in pulvinar donec diam elit consequat eget augue vitae aliquet sollicitudin.
+                                </div>
+
+                            </div>
+                            <div class="text-center">
+                                <div class="testimonial-img-wraper text-center">
+                                    <img class="img-responsive img-circle" src="img/meet_3.png" alt="">
+                                    <p class="author">Dawn Edwin</p>
+                                </div>
+                                <div class="testimonial-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egetvel lacus pretium rhoncus a quis nisly Ut vehicula gravida dui in pulvinar donec diam elit consequat eget augue vitae aliquet sollicitudin.
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial section end-->
+
+        <!-- Blog section -->
+        <section id="blog" class="section bg-white">
+            <div class="container">
+                <div class="row section-heading">
+                    <div class="col-md-12 heading-wraper">
+                        <h2>
+                            <span class="title">Our Products Features</span>
+                            <span class="separetor">|||</span>
+                            <span class="subtitle">A little about what we do</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row blog-wraper">
+                    <div class="col-md-4 col-sm-6 blog-inner">
+                        <img class="img-responsive" src="img/blog-1.jpg" alt="">
+                        <div class="blog-content">
+                            <h2 class="blog-title">Design Your Mind</h2>
+                            <p class="blog-meta">3 Nov, 2014<span class="separetor">|</span><span class="blog-author-pre-tag"></span>Jone smith</p>
+                            <p class="blog-content">Create a website that you are gonna be proud of. Be it Business, Portfolio, Photography, eCommerce & much more.</p>
+                            <p class="blog-view-more-btn"><a href="" class="btn btn-default btn-blog-view-more">read more</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 blog-inner">
+                        <img class="img-responsive" src="img/blog-2.jpg" alt="">
+                        <div class="blog-content">
+                            <h2 class="blog-title">Winter Is Comming</h2>
+                            <p class="blog-meta">3 Nov, 2014<span class="separetor">|</span><span class="blog-author-pre-tag"></span>Jone smith</p>
+                            <p class="blog-content">Create a website that you are gonna be proud of. Be it Business, Portfolio, Photography, eCommerce & much more.</p>
+                            <p class="blog-view-more-btn"><a href="" class="btn btn-default btn-blog-view-more">read more</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 blog-inner">
+                        <img class="img-responsive" src="img/blog-3.jpg" alt="">
+                        <div class="blog-content">
+                            <h2 class="blog-title">The Illustration</h2>
+                            <p class="blog-meta">3 Nov, 2014<span class="separetor">|</span><span class="blog-author-pre-tag"></span>Jone smith</p>
+                            <p class="blog-content">Create a website that you are gonna be proud of. Be it Business, Portfolio, Photography, eCommerce & much more.</p>
+                            <p class="blog-view-more-btn"><a href="" class="btn btn-default btn-blog-view-more">read more</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog section end-->
+
+        <!-- Client section -->
+        <section id="client" class="section" style="background:url(img/Clientsbg.png)">
+            <div class="container">
+                <div class="row clients-outer">
+                    <div class="col-md-3">
+                        <div class="client-section-title">
+                            Millions Of Our Clients
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-4 client-logo-wiget"><img class="img-responsive client-logo" src="img/client-logo-1.png" alt=""></div>
+                            <div class="col-md-2 col-sm-4 client-logo-wiget"><img class="img-responsive client-logo" src="img/client-logo-2.png" alt=""></div>
+                            <div class="col-md-2 col-sm-4 client-logo-wiget"><img class="img-responsive client-logo" src="img/client-logo-3.png" alt=""></div>
+                            <div class="col-md-2 col-sm-4 client-logo-wiget"><img class="img-responsive client-logo" src="img/client-logo-4.png" alt=""></div>
+                            <div class="col-md-2 col-sm-4 client-logo-wiget"><img class="img-responsive client-logo" src="img/client-logo-5.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Client section end-->
+
+        <!-- Contact section -->
+        <section id="contact" class="section bg-white">
+            <div class="container">
+               <div class="row section-heading">
+                    <div class="col-md-12 heading-wraper">
+                        <h2>
+                            <span class="title">Contact with us</span>
+                            <span class="separetor">|||</span>
+                            <span class="subtitle">Keep up with the latest happenings</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 contact-form-wraper">
+                        <div id="response"></div>
+                        <form id="contact_form" action="php/contact.php" method="post">
+                            <div class="form-group">
+                                 <div class="inner-addon right-addon">
+                                    <i class="ion-ios-email-outline"></i>
+                                    <input type="email" class="form-control ion-ios-email-outline" id="email" name="email" placeholder="Email" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                 <div class="inner-addon right-addon">
+                                    <i class="ion-person"></i>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                 <div class="inner-addon right-addon">
+                                    <i class="ion-android-call"></i>
+                                    <input type="text" class="form-control" id="contact" name="contact" placeholder="Contact No" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                 <div class="inner-addon right-addon">
+                                    <i class="ion-ios-email-outline"></i>
+                                    <textarea name="message" id="message" name="message" class="form-control" placeholder="Message" required></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="submit" id="submit" value="Send Message" class='btn btn-default btn-block submit-btn'>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6 google-map-wraper">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact section end-->
+
+        <!-- Address section-->
+        <section id="address" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="address-wraper text-center">
+                            <div class="address-icon-wraper">
+                                <i class="ion-ios-location"></i>
+                            </div>
+                            <div class="address">
+                                <p class="address-heading">Address</p>
+                                <p>Xoffman Carkway, P.O Box</p>
+                                <p>312 Uountain View. United States of America.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="address-wraper text-center">
+                            <div class="address-icon-wraper">
+                                <i class="ion-android-call"></i>
+                            </div>
+                            <div class="address">
+                                <p class="address-heading">Phone</p>
+                                <p>Local: 1-120-123-hello</p>
+                                <p>Mobile: 1-200-123-hello</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="address-wraper text-center">
+                            <div class="address-icon-wraper">
+                                <i class="ion-email"></i>
+                            </div>
+                            <div class="address">
+                                <p class="address-heading">Email Address</p>
+                                <p>info@themewagon.com</p>
+                                <p>www.themewagon.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Address section end-->
+
+        <!-- Footer section -->
+        <section id="footer">
+            <div class="container">
+                <div class="row footer-outer">
+                    <div class="col-md-6 text-left footer-copyright">&copy; Copyright Boston 2016</div>
+                    <div class="col-md-6 text-right footer-author">Theme by ThemeWagon</div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer section end-->
+
+
+        <!--  Fixed right social button -->
+        <div class="social-media-wraper">
+            <ul class="social-media-ul">
+                <li class="social-media-li">
+                    <a href="" class="social-icon ion-social-facebook"></a>
+                </li>
+                <li class="social-media-li">
+                    <a href="" class="social-icon ion-social-twitter"></a>
+                </li>
+                <li class="social-media-li">
+                    <a href="" class="social-icon ion-social-googleplus"></a>
+                </li>
+            </ul>
+        </div>
+        <!--  Fixed right social button End -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Counter script  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+        <!-- Counter script  end-->
+
+        <!-- OwlCarousal script  -->
+        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+        <!-- OwlCarousal  end-->
+
+        <script src="{% static 'js/main.js' %}"></script>
+        <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+        <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+        <!-- Google Map-->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+
+
+    </body>
 </html>
