@@ -7,6 +7,7 @@ from django.contrib import admin
 from products.models import Products
 from products.models import Comment
 from products.models import Board
+from products.models import aglans
 from .models import Board
 admin.site.register(Products)
 admin.site.register(Comment)
