@@ -32,7 +32,7 @@ class Comment(models.Model):
     email = models.EmailField(max_length=75)
     website = models.URLField(max_length=200, null=True, blank=True)
     content = models.TextField()
-    products = models.ForeignKey(products, on_delete=models.CASCADE)
+    #products = models.ForeignKey(products, on_delete=models.CASCADE)
     created_on = models.DateTimeField(auto_now_add=True)
 
 #class Blog(models.Model):
