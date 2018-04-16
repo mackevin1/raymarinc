@@ -70,8 +70,8 @@ class Post(models.Model):
 class aglans(models.Model):
     name = models.CharField(max_length=30, unique=True)
     description = models.CharField(max_length=100)
-        def __str__(self):
-            """
-            String for representing the Model object (in Admin site etc.)
-            """
-            return self.name
+    def __str__(self):
+        """
+        String for representing the Model object (in Admin site etc.)
+        """
+        return self.name
