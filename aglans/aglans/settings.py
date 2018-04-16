@@ -32,7 +32,6 @@ ALLOWED_HOSTS = ['dev.aglans.com']
 
 INSTALLED_APPS = [
     'products',
-    'board',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
