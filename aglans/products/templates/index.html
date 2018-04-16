@@ -186,17 +186,17 @@ All of our products and services offered are designed specifically to support ou
            </tr>
          </thead>
          <tbody>
-  {% for boards in board %}
-    <tr>
-      <td>
-        <a href="#">{{ board.name }}</a>
-        <small class="text-muted d-block">{{ board.description }}</small>
-      </td>
-      <td class="align-middle">0</td>
-      <td class="align-middle">0</td>
-      <td></td>
-    </tr>
-  {% endfor %}
+           {% for board in boards %}
+             <tr>
+               <td>
+                 {{ board.name }}<br>
+                 <small style="color: #888">{{ board.description }}</small>
+               </td>
+               <td>0</td>
+               <td>0</td>
+               <td></td>
+             </tr>
+           {% endfor %}
 </tbody>
        </table>
         <!--            <div class="col-sm-6 col-md-4 col-portfolio-wiget">
