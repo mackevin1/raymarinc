@@ -7,4 +7,4 @@ def post_list(request):
     return render(request, 'products/index.html',{})
 def index(request):
     boards = Products.objects.all()
-    return render(request, 'index.html', {})
+    return render(request, 'index.html', {'boards': boards})
