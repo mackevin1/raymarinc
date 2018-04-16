@@ -186,14 +186,14 @@ All of our products and services offered are designed specifically to support ou
            </tr>
          </thead>
          <tbody>
-  {% for productss in products_products %}
+  {% for Boards in products_products %}
     <tr>
       <td>
-        <a href="{% url 'board_topics' board.pk %}">{{ products.title }}</a>
-        <small class="text-muted d-block">{{ products.content }}</small>
+        <a href="{% url 'board_topics' board.pk %}">{{ board.name }}</a>
+        <small class="text-muted d-block">{{ board.description }}</small>
       </td>
-      <td class="align-middle">{{ products.author }}</td>
-      <td class="align-middle">{{ products.img }}</td>
+      <td class="align-middle"></td>
+      <td class="align-middle"></td>
       <td></td>
     </tr>
   {% endfor %}
