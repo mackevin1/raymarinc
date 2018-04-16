@@ -52,8 +52,8 @@ class Board(models.Model):
 class Topic(models.Model):
     subject = models.CharField(max_length=255)
     last_updated = models.DateTimeField(auto_now_add=True)
-    board = models.ForeignKey(Board, related_name='topics')
-    starter = models.ForeignKey(User, related_name='topics')
+    board = models.ForeignKey('Board', related_name='topics')
+    starter = models.ForeignKey('User', related_name='topics')
     topic = models.ForeignKey('topics', on_delete=models.CASCADE,)
 
 
@@ -63,5 +63,5 @@ class Post(models.Model):
     topic = models.ForeignKey(Topic, related_name='posts')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(null=True)
-    created_by = models.ForeignKey(User, related_name='posts')
-    updated_by = models.ForeignKey(User, null=True, related_name='+')
+    created_by = models.ForeignKey('User', related_name='posts')
+    updated_by = models.ForeignKey('User', null=True, related_name='+')
