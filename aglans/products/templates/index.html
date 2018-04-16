@@ -186,11 +186,11 @@ All of our products and services offered are designed specifically to support ou
            </tr>
          </thead>
          <tbody>
-           {% for boards in products %}
+           {% for board in boards %}
              <tr>
                <td>
                  {{ board.name }}
-                 <small class="subtitle">{{ board.description }}</small>
+                 <small class="text-muted d-block">{{ board.description }}</small>
                </td>
                <td class="align-middle">0</td>
                <td class="align-middle">0</td>
