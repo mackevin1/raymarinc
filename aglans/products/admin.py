@@ -7,4 +7,4 @@ from products.models import Comment
 from product.models import Blog
 admin.site.register(Products)
 admin.site.register(Comment)
-admin.site.register(blog)
+admin.site.register(Blog)
