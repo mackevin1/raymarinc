@@ -126,7 +126,7 @@ All of our products and services offered are designed specifically to support ou
         <!-- About-us section end -->
 
         <!-- Counter section  -->
-        <section id="counter" class="section" style="background:url(img/counter-bg.jpg)">
+    <!--    <section id="counter" class="section" style="background:url(img/counter-bg.jpg)">
             <div class="counter-overlay"></div>
             <div class="container counter-content-container">
                 <h3 class="counter-heading">Why will you love our theme?</h3>
@@ -157,7 +157,7 @@ All of our products and services offered are designed specifically to support ou
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Counter section  end-->
 
         <!-- LatestWork section -->
@@ -166,9 +166,9 @@ All of our products and services offered are designed specifically to support ou
                 <div class="row section-heading">
                     <div class="col-md-12 heading-wraper">
                         <h2>
-                            <span class="title">Our latest works</span>
+                            <span class="title">Products used</span>
                             <span class="separetor">|||</span>
-                            <span class="subtitle">Make sure you know about us</span>
+                            <span class="subtitle">all the products we use</span>
                             <a href="" class="btn btn-default btn-view-more pull-right">view all</a>
                         </h2>
                     </div>
@@ -176,6 +176,9 @@ All of our products and services offered are designed specifically to support ou
                 <div class="row">
                     <div class="col-sm-6 col-md-4 col-portfolio-wiget">
                         <div class="portfolio-wiget">
+                          {% for products in products %}
+      {{ product.title }} <br>
+    {% endfor %}
                             <img class="img-responsive" src="{% static 'img/portfolio-1.jpg' %}" alt="">
                             <div class="hover-caption">
                                 <p><i class="portfolio-caption-icon ion-thumbsup"></i>30 Appreciate</p>
