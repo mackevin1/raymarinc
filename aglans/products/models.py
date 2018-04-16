@@ -66,7 +66,7 @@ class Post(models.Model):
         String for representing the Model object (in Admin site etc.)
         """
         return self.name
-from djangocms_text_ckeditor.fields import HTMLField
+#from djangocms_text_ckeditor.fields import HTMLField
 
 from shop.money.fields import MoneyField
 from shop.models.product import BaseProduct, BaseProductManager, CMSPageReferenceMixin
