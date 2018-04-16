@@ -11,4 +11,3 @@ from .models import Board
 admin.site.register(Products)
 admin.site.register(Comment)
 admin.site.register(Board)
-admin.site.register(Board)
