@@ -186,7 +186,7 @@ All of our products and services offered are designed specifically to support ou
            </tr>
          </thead>
          <tbody>
-  {% for Boards in products %}
+  {% for boards in boards %}
     <tr>
       <td>
         <a href="{% url 'board_topics' board.pk %}">{{ board.name }}</a>
