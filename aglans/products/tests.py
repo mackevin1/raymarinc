@@ -1,7 +1,7 @@
 #from django.core.urlresolvers import reverse
 from django.urls import resolve
 from django.test import TestCase
-from .views import home
+from .views import index
 
 class HomeTests(TestCase):
     def test_home_view_status_code(self):
