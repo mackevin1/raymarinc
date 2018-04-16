@@ -6,5 +6,5 @@ from .models import Products
 def post_list(request):
     return render(request, 'products/index.html',{})
 def index(request):
-    boards = Board.objects.all()
+    boards = Products.objects.all()
     return render(request, 'index.html', {'boards': boards})
