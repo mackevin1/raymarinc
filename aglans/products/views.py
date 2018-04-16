@@ -6,4 +6,4 @@ from .models import Products
 def post_list(request):
     return render(request, 'products/index.html',{})
 def index(request):
-     return render(request, 'index.html', {'boards': boards})
+     return render(request, 'index.html', {'boards': products})
