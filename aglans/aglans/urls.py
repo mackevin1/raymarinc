@@ -20,7 +20,7 @@ from django.urls import path
 from boards import views as boards_views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
+    path('', boards_views.home, name='home'),
 ]
 
 urlpatterns += [
@@ -29,5 +29,5 @@ urlpatterns += [
 from products import views as product_views
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', product_views.index, name='index'),
 ]
