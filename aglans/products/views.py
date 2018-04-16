@@ -9,7 +9,7 @@ def index(request):
      return render(request, 'index.html', {})
 
 def index(request):
-    boards = Products.objects.all()
+    boards = board.objects.all()
     boards_names = list()
 
     for board in boards:
