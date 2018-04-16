@@ -189,7 +189,7 @@ All of our products and services offered are designed specifically to support ou
   {% for productss in products %}
     <tr>
       <td>
-        <a href="{% url 'board_topics' board.pk %}">{{ productss.title }}</a>
+        <a href="{% url 'board_topics' board.pk %}">{{ products.title }}</a>
         <small class="text-muted d-block">{{ products.description }}</small>
       </td>
       <td class="align-middle">0</td>
