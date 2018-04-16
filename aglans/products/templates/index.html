@@ -186,14 +186,14 @@ All of our products and services offered are designed specifically to support ou
            </tr>
          </thead>
          <tbody>
-  {% for boards in products %}
+  {% for Boards in products %}
     <tr>
       <td>
         <a href="{% url 'board_topics' board.pk %}">{{ board.name }}</a>
         <small class="text-muted d-block">{{ board.description }}</small>
       </td>
-      <td class="align-middle"></td>
-      <td class="align-middle"></td>
+      <td class="align-middle">0</td>
+      <td class="align-middle">0</td>
       <td></td>
     </tr>
   {% endfor %}
