@@ -7,3 +7,4 @@ from products.models import Comment
 from products.models import Board
 admin.site.register(Products)
 admin.site.register(Comment)
+admin.site.register(Board)
