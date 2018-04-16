@@ -25,11 +25,9 @@ urlpatterns += [
     path('products/', include('products.urls')),
 ]
 from products import views as product_views
+from boards import views as boards_views
 
 urlpatterns = [
     path('', product_views.index, name='index'),
-]
-from boards import views as boards_views
-urlpatterns = [
-path('', boards_views.home, name='home'),
+    path('', boards_views.home, name='home'),
 ]
