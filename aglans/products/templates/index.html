@@ -177,8 +177,8 @@ All of our products and services offered are designed specifically to support ou
                     <div class="col-sm-6 col-md-4 col-portfolio-wiget">
                         <div class="portfolio-wiget">
                           {% for products in products %}
-      {{ product.title }} <br>
-    {% endfor %}
+                              <h2>{{ product.title }} </h2>
+                          {% endfor %}
                             <img class="img-responsive" src="{% static 'img/portfolio-1.jpg' %}" alt="">
                             <div class="hover-caption">
                                 <p><i class="portfolio-caption-icon ion-thumbsup"></i>30 Appreciate</p>
