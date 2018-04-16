@@ -21,7 +21,7 @@ from products import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
-    #url(r'^boards/(?P<pk>\d+)/$', views.board_topics, name='board_topics'),
+    url(r'^boards/(?P<pk>\d+)/$', views.board_topics, name='board_topics'),
 ]
 
 urlpatterns += [
