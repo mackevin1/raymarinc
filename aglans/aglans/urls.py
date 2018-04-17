@@ -17,6 +17,8 @@ from django.conf.urls import include
 from django.contrib import admin
 from django.conf.urls import url
 from django.urls import path
+from products import views as product_views
+from boards import views as boards_views
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
@@ -24,8 +26,7 @@ urlpatterns = [
 urlpatterns += [
     path('products/', include('products.urls')),
 ]
-from products import views as product_views
-from boards import views as boards_views
+
 
 urlpatterns = [
     path('', product_views.index, name='index'),
