@@ -1,7 +1,7 @@
 from django.conf.urls import url
 from django.urls import path
 from . import views
-from board import views as board_views
+from boards import views as boards_views
 urlpatterns = [
 #    path('$/', views.products, name='products'),
 #    path('$/', views.comments, name='comments'),
