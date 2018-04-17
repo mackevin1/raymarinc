@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Board
+from .models import aglans
 
 def home(request):
     boards = Board.objects.all()
