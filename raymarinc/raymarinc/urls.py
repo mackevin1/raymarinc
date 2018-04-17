@@ -21,5 +21,4 @@ from aglans import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     url('^$', views.home, name='home'),
-    url('admin/', admin.site.urls),
 ]
