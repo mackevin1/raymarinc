@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Board
-from products.models import product_views
+from products.models import Products
 
 def home(request):
     boards = Board.objects.all()
