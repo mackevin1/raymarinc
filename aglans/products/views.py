@@ -1,10 +1,15 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Products
+from .models import Boards
 
 # Create your views here.
 def post_list(request):
-    return render(request, 'products/index.html',{})
+    context = {
+            'products': Products.objects.all(),
+            'boards': Boards.objects.all(),
+        }
+            return render(request, 'products/index.html',{})
 def index(request):
     boards = Products.objects.all()
     return render(request, 'index.html', {'boards': boards})
