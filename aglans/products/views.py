@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Products
-from .models import Boards
+from .models import Board
 
 # Create your views here.
 def post_list(request):
